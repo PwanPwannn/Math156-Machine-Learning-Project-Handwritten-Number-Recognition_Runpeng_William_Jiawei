@@ -13,7 +13,7 @@ Math156_Final_Project/
 │   ├── mnist_test.csv
 ├── saved_model/
 │   └── my_trained_cnn_model.h5
-├── Math_156_Final_Project_Code_Latest.py  # Main script for training and evaluating the model
+├── math_156_final_project_code_latest.py  # Main script for training and evaluating the model
 ├── handwritten_digit_app.py  # Streamlit app for digit recognition
 ├── README.md  # Project documentation (this file)
 ├── requirements.txt  # List of dependencies required to run the project
@@ -21,7 +21,7 @@ Math156_Final_Project/
 
 - **data/**: Contains the dataset files (`mnist_train.csv` and `mnist_test.csv`).
 - **saved_model/**: Contains the saved trained model (`my_trained_cnn_model.h5`).
-- **Math_156_Final_Project_Code_Latest.py**: The main script for training and evaluating the model.
+- **math_156_final_project_code_latest.py**: The main script for training and evaluating the model.
 - **handwritten_digit_app.py**: The script for running the Streamlit app to predict handwritten digits.
 - **README.md**: This documentation file.
 - **requirements.txt**: File listing all the necessary dependencies.
@@ -47,7 +47,7 @@ To run this project, you'll need:
 1. Make sure the **MNIST dataset** files are located in the `data` folder.
 2. Run the training script to train the model and save it:
    ```sh
-   python Math_156_Final_Project_Code_Latest.py
+   python math_156_final_project_code_latest.py
    ```
    The trained model will be saved in the `saved_model` folder as `my_trained_cnn_model.h5`.
 
