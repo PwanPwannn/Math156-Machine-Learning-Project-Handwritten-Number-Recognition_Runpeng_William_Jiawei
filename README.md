@@ -74,7 +74,10 @@ Follow these steps to run the Streamlit application:
    ```
 
 **If Step 2 works, then you may now use the Digit Recognition App in the browser. You may use the image files in the testing_image folder for testing with the app. You should see the app terminal in the browser similar to the following image.**
+
+
 <img width="653" alt="1733124943358" src="https://github.com/user-attachments/assets/41908145-a152-415f-aab0-105b185426d6">
+
 
 **If step 2 is not working or reports any error, you may first clearn your terminal and reopen the digit app file, and then repeat steps 1 and 2. If error still exists, move on to step 3 and step 4.**
 
