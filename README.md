@@ -1,8 +1,7 @@
-
 # CNN for MNIST Handwritten Digit Recognition
 
 ## Overview
-This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits using the MNIST dataset. The code is written in Python using TensorFlow and Keras and is designed to train, evaluate, and visualize the model's performance on handwritten digit classification. Refer to the Project code with the "Latest" version.
+This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits using the MNIST dataset. The code is written in Python using TensorFlow and Keras and is designed to train, evaluate, and visualize the model's performance on handwritten digit classification. The project also includes a web-based application built using Streamlit that allows users to upload images of handwritten digits and see predictions in real-time.
 
 ## Project Directory Structure
 Ensure that your project folder is organized as follows:
@@ -12,88 +11,90 @@ Math156_Final_Project/
 ├── data/
 │   ├── mnist_train.csv
 │   ├── mnist_test.csv
-├── Math_156_Final_Project_Code_Latest.py
-├── README.md
-├── requirements.txt
+├── saved_model/
+│   └── my_trained_cnn_model.h5
+├── Math_156_Final_Project_Code_Latest.py  # Main script for training and evaluating the model
+├── handwritten_digit_app.py  # Streamlit app for digit recognition
+├── README.md  # Project documentation (this file)
+├── requirements.txt  # List of dependencies required to run the project
 ```
 
-- `data/`: Contains the dataset files (`mnist_train.csv` and `mnist_test.csv`).
-- `Math_156_Final_Project_Code.py`: The main script for training and evaluating the model.
-- `README.md`: Project documentation (this file).
-- `requirements.txt`: List of dependencies required to run the project.
+- **data/**: Contains the dataset files (`mnist_train.csv` and `mnist_test.csv`).
+- **saved_model/**: Contains the saved trained model (`my_trained_cnn_model.h5`).
+- **Math_156_Final_Project_Code_Latest.py**: The main script for training and evaluating the model.
+- **handwritten_digit_app.py**: The script for running the Streamlit app to predict handwritten digits.
+- **README.md**: This documentation file.
+- **requirements.txt**: File listing all the necessary dependencies.
 
 ## Prerequisites
-To run this project, you need the following:
+To run this project, you'll need:
+- Python 3.9 or later
+- Anaconda or a similar environment manager (recommended)
 
-- Python 3.8 or above (compatible with TensorFlow)
-- Anaconda (recommended for managing virtual environments)
-
-## Setup Instructions
-
-1. **Clone the Repository**
-   ```
-   git clone <repository_url>
-   cd Math156_Final_Project
+### Setting Up the Environment
+1. **Create and activate a new virtual environment** using Anaconda:
+   ```sh
+   conda create -n tensorflow_env python=3.9
+   conda activate tensorflow_env
    ```
 
-2. **Create a Virtual Environment**
-   - Use Anaconda to create a virtual environment:
-     ```
-     conda create -n tensorflow_env python=3.8
-     conda activate tensorflow_env
-     ```
+2. **Install the required dependencies**:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-3. **Install Dependencies**
-   - Install the required packages using `requirements.txt`:
-     ```
-     pip install -r requirements.txt
-     ```
+## Running the Training Script
+1. Make sure the **MNIST dataset** files are located in the `data` folder.
+2. Run the training script to train the model and save it:
+   ```sh
+   python Math_156_Final_Project_Code_Latest.py
+   ```
+   The trained model will be saved in the `saved_model` folder as `my_trained_cnn_model.h5`.
 
-4. **Prepare Dataset**
-   - Ensure that the `data` folder exists in the project directory and contains `mnist_train.csv` and `mnist_test.csv` files.
+## Running the Streamlit Application
+The Streamlit application allows users to upload handwritten digit images and see predictions.
 
-5. **Run the Code**
-   - Run the main script to train and evaluate the model:
-     ```
-     python Math_156_Final_Project_Code.py
-     ```
+### Important Note on File Extensions
+Make sure that all `.py` files have the correct `.py` extension and are not hidden or mislabeled (e.g., `.py.txt`). You can do this by enabling **file name extensions** in File Explorer:
+1. Open **File Explorer**.
+2. Click on the **View** tab.
+3. Check the box labeled **File name extensions** to ensure you can see the correct file extensions.
 
-## Code Description
+### Running the Streamlit App
+1. **Navigate to the project directory** where the Streamlit app script is located:
+   ```sh
+   cd "c:/Users/your_username/Desktop/Math156/Math156 Final Project"
+   ```
 
-1. **Data Loading and Preprocessing**
-   - The `load_and_preprocess_data(filepath)` function is used to load the CSV files and normalize the images to have values between 0 and 1.
-   - The labels are one-hot encoded.
-
-2. **Data Augmentation**
-   - The `augment_data(train_images, train_labels)` function is used to perform data augmentation, including rotations, shifts, shear, and zoom operations to improve model generalization.
-
-3. **Model Definition**
-   - The `create_cnn_model()` function defines a CNN model using TensorFlow and Keras. The model has multiple convolutional layers, batch normalization, and dropout for regularization.
-
-4. **Model Training**
-   - The `compile_and_train_model(model, datagen, train_images, train_labels)` function compiles and trains the model using the Adam optimizer and early stopping to avoid overfitting.
-
-5. **Model Evaluation**
-   - The `evaluate_model(model, test_images, test_labels)` function evaluates the model's performance on the test set and prints the accuracy, classification report, and confusion matrix.
-
-6. **Plotting Training History**
-   - The `plot_history(history)` function plots the training and validation accuracy and loss over epochs.
-
-## Results
-- The training and validation performance metrics are printed, and accuracy and loss plots are generated after training.
-- The test set accuracy is displayed, along with a detailed classification report and confusion matrix to analyze model performance.
+2. **Run the Streamlit app**:
+   ```sh
+   streamlit run handwritten_digit_app.py
+   ```
+   This command will open the app in your default web browser, where you can upload images and see the predictions.
 
 ## Dependencies
-The project requires the following Python packages:
+The necessary dependencies are listed in `requirements.txt`. If using Anaconda, you can install them all at once:
+```sh
+pip install -r requirements.txt
+```
 
-- `tensorflow==2.11.0`
-- `numpy`
-- `matplotlib`
-- `scipy`
-- `sklearn`
+### Example `requirements.txt`
+```
+tensorflow==2.x.x
+streamlit
+Pillow
+scikit-learn
+numpy
+```
 
-These dependencies are listed in `requirements.txt` for easy installation.
+Make sure to adjust TensorFlow's version (`2.x.x`) to the one compatible with your environment.
 
 ## Notes
-- The current script uses relative paths (`data/mnist_train.csv`, `data/mnist_test.csv`) to ensure that it can be run on any machine with the correct folder structure.
-- Make sure to keep the `data` folder in the same directory as the script.
+- The model is saved in **HDF5 format** (`.h5`). This format works well with Keras, but you can also save it in the native Keras format (`.keras`) if preferred.
+- Ensure your paths are correct and relative to the current working directory to allow seamless execution.
+
+## Troubleshooting
+- **Path Issues**: Ensure the `saved_model` and `data` folders are present and properly referenced.
+- **Missing Dependencies**: Make sure to install all dependencies listed in `requirements.txt` before running the scripts.
+- **File Extensions**: Ensure all Python files have the correct `.py` extension by enabling **file name extensions** in File Explorer.
+
