@@ -67,6 +67,11 @@ Follow these steps to run the Streamlit application:
    ```sh
    conda activate tensorflow_env
    ```
+   
+2. **Run the digit app file, and run the command provided in the terminal to start the Streamlit App (You should use your own command provided in your terminal. The following command is just an example)**:
+   ```sh
+   streamlit run c:/Users/runpengh1218/Desktop/Math156/Math156_Final_Project/handwritten_digit_app.py
+   ```
 
 2. **Navigate to the Project Directory (Your own directory, you may need to adjust the following line of code)**:
    ```sh
