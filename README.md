@@ -63,12 +63,12 @@ Make sure that all `.py` files have the correct `.py` extension and are not hidd
 ### Running the Streamlit App (VERY IMPORTANT, BE CAREFUL!)
 Follow these steps to run the Streamlit application:
 
-1. **Activate the Conda Environment**:
+1. **Activate the Conda Environment (via Anaconda Prompt)**:
    ```sh
    conda activate tensorflow_env
    ```
 
-2. **Navigate to the Project Directory**:
+2. **Navigate to the Project Directory (Your own directory, you may need to adjust the following line of code)**:
    ```sh
    cd "<path_to_your_project_folder>"
    ```
