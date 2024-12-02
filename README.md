@@ -12,7 +12,7 @@ Math156_Final_Project/
 ├── data/
 │   ├── mnist_train.csv
 │   ├── mnist_test.csv
-├── Math_156_Final_Project_Code.py
+├── Math_156_Final_Project_Code_Latest.py
 ├── README.md
 ├── requirements.txt
 ```
