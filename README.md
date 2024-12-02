@@ -60,7 +60,7 @@ Make sure that all `.py` files have the correct `.py` extension and are not hidd
 2. Click on the **View** tab.
 3. Check the box labeled **File name extensions** to ensure you can see the correct file extensions.
 
-### Running the Streamlit App
+### Running the Streamlit App (VERY IMPORTANT, BECAREFUL!)
 Follow these steps to run the Streamlit application:
 
 1. **Activate the Conda Environment**:
