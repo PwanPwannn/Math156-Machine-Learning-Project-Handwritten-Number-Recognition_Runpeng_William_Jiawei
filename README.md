@@ -29,7 +29,7 @@ Math156_Final_Project/
 ## Prerequisites
 To run this project, you'll need:
 - Python 3.9 or later
-- Anaconda or a similar environment manager (recommended)
+- Anaconda or a similar environment manager (strongly recommended)
 
 ### Setting Up the Environment
 1. **Create and activate a new virtual environment** using Anaconda:
@@ -60,7 +60,7 @@ Make sure that all `.py` files have the correct `.py` extension and are not hidd
 2. Click on the **View** tab.
 3. Check the box labeled **File name extensions** to ensure you can see the correct file extensions.
 
-### Running the Streamlit App (VERY IMPORTANT, BE CAREFUL!)
+### Running the Streamlit App (PLEASE STRICTLY FOLLOW THE STEPS CAREFULLY)
 Follow these steps to run the Streamlit application:
 
 1. **Activate the Conda Environment (via Anaconda Prompt)**:
