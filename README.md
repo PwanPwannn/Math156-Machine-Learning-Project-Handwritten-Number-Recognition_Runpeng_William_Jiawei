@@ -73,12 +73,15 @@ Follow these steps to run the Streamlit application:
    streamlit run c:/Users/runpengh1218/Desktop/Math156/Math156_Final_Project/handwritten_digit_app.py
    ```
 
-2. **Navigate to the Project Directory (Your own directory, you may need to adjust the following line of code)**:
+**If Step 2 works, then you may now use the Digit Recognition App in the browser.**
+**If step 2 is not working or reports any error, you may move on to step 3 and step 4.**
+
+3. **Navigate to the Project Directory (Your own directory, you may need to adjust the following line of code)**:
    ```sh
    cd "<path_to_your_project_folder>"
    ```
 
-3. **Run the Streamlit App**:
+4. **Run the Streamlit App**:
    ```sh
    streamlit run handwritten_digit_app.py
    ```
