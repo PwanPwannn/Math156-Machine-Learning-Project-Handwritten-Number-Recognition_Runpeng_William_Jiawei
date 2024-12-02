@@ -49,7 +49,7 @@ To run this project, you'll need:
    ```sh
    python math_156_final_project_code_latest.py
    ```
-   The trained model will be saved in the `saved_model` folder as `my_trained_cnn_model.h5`.
+   There will be two graphs (accuracy and loss) showing up as results. After closing the graphs, the trained model will be saved in the `saved_model` folder as `my_trained_cnn_model.h5`.
 
 ## Running the Streamlit Application
 The Streamlit application allows users to upload handwritten digit images and see predictions.
