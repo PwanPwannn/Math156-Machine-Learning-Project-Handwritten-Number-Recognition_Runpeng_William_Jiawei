@@ -2,7 +2,7 @@
 # CNN for MNIST Handwritten Digit Recognition
 
 ## Overview
-This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits using the MNIST dataset. The code is written in Python using TensorFlow and Keras and is designed to train, evaluate, and visualize the model's performance on handwritten digit classification.
+This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits using the MNIST dataset. The code is written in Python using TensorFlow and Keras and is designed to train, evaluate, and visualize the model's performance on handwritten digit classification. Refer to the Project code with the "Latest" version.
 
 ## Project Directory Structure
 Ensure that your project folder is organized as follows:
