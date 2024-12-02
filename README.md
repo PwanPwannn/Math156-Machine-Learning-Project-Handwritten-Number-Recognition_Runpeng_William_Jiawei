@@ -70,7 +70,7 @@ Follow these steps to run the Streamlit application:
 
 2. **Navigate to the Project Directory**:
    ```sh
-   cd "c:/Users/your_username/Desktop/Math156/Math156_Final_Project"
+   cd "<path_to_your_project_folder>"
    ```
 
 3. **Run the Streamlit App**:
