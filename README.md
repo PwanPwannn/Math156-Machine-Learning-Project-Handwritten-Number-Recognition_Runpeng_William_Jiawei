@@ -73,7 +73,8 @@ Follow these steps to run the Streamlit application:
    streamlit run c:/Users/runpengh1218/Desktop/Math156/Math156_Final_Project/handwritten_digit_app.py
    ```
 
-**If Step 2 works, then you may now use the Digit Recognition App in the browser.**
+**If Step 2 works, then you may now use the Digit Recognition App in the browser. You may use the image files in the testing_image folder for testing with the app.**
+
 **If step 2 is not working or reports any error, you may move on to step 3 and step 4.**
 
 3. **Navigate to the Project Directory (Your own directory, you may need to adjust the following line of code)**:
@@ -92,16 +93,6 @@ The necessary dependencies are listed in `requirements.txt`. If using Anaconda, 
 ```sh
 pip install -r requirements.txt
 ```
-
-### Example `requirements.txt`
-```
-tensorflow==2.x.x
-streamlit
-Pillow
-scikit-learn
-numpy
-```
-
 Make sure to adjust TensorFlow's version (`2.x.x`) to the one compatible with your environment.
 
 ## Notes
