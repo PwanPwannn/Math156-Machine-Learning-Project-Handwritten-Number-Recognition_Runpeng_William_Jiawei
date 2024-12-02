@@ -61,12 +61,19 @@ Make sure that all `.py` files have the correct `.py` extension and are not hidd
 3. Check the box labeled **File name extensions** to ensure you can see the correct file extensions.
 
 ### Running the Streamlit App
-1. **Navigate to the project directory** where the Streamlit app script is located:
+Follow these steps to run the Streamlit application:
+
+1. **Activate the Conda Environment**:
    ```sh
-   cd "c:/Users/your_username/Desktop/Math156/Math156 Final Project"
+   conda activate tensorflow_env
    ```
 
-2. **Run the Streamlit app**:
+2. **Navigate to the Project Directory**:
+   ```sh
+   cd "c:/Users/your_username/Desktop/Math156/Math156_Final_Project"
+   ```
+
+3. **Run the Streamlit App**:
    ```sh
    streamlit run handwritten_digit_app.py
    ```
