@@ -79,7 +79,7 @@ Follow these steps to run the Streamlit application:
 <img width="653" alt="1733124943358" src="https://github.com/user-attachments/assets/41908145-a152-415f-aab0-105b185426d6">
 
 
-**If step 2 is not working or reports any error, you may first clearn your terminal and reopen the digit app file, and then repeat steps 1 and 2. If error still exists, move on to step 3 and step 4.**
+**(VERY IMPORTANT) If step 2 is not working or reports any error, you may first clearn your terminal and rerun the app file in VScode, and then redo step 2 and run the appearing command. Make sure that the conda environment is activated, the restricted model is off, and all the necessary packs are installed. If error still exists, try reopen the digit app file, and then repeat steps 1 and 2. If error still exists, move on to step 3 and step 4.**
 
 3. **Navigate to the Project Directory (Your own directory, you may need to adjust the following line of code)**:
    ```sh
