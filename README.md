@@ -11,8 +11,8 @@ Math156_Final_Project/
 ├── data/
 │   ├── mnist_train.csv
 │   ├── mnist_test.csv
-├── saved_model/
-│   └── my_trained_cnn_model.h5
+├── saved_model/  # Need to create this folder manually
+│   └── my_trained_cnn_model.h5  # Model file that will be saved after running the main script successfully
 ├── math_156_final_project_code_latest.py  # Main script for training and evaluating the model
 ├── handwritten_digit_app.py  # Streamlit app for digit recognition
 ├── README.md  # Project documentation (this file)
