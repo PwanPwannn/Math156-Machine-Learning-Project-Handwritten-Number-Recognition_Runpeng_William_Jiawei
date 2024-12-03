@@ -45,7 +45,7 @@ To run this project, you'll need:
 
 ## Running the Training Script
 1. Make sure the **MNIST dataset** files are located in the `data` folder.
-2. Run the training script to train the model and save it:
+2. Run the training script to train the model and save it (or preferably you can run it directly in VSCode):
    ```sh
    python math_156_final_project_code_latest.py
    ```
