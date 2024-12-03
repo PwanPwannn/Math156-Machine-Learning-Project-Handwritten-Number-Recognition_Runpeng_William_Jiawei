@@ -28,7 +28,7 @@ Math156_Final_Project/
 
 ## Prerequisites
 To run this project, you'll need:
-- Python 3.9 or later
+- Python 3.9 or later (must be compatible with tensorflow)
 - Anaconda or a similar environment manager (strongly recommended)
 
 ### Setting Up the Environment
